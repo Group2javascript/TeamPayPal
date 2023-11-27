@@ -1,0 +1,49 @@
+<section class="cart-container">
+  <h1>{{ title }}</h1>
+
+   {{#if cart.length}}
+  <ul>
+    {{#each cart}}
+      <li>
+        {{ this.name }} - ${{ this.price }}
+        <form action="/removeFromCart/{{ this.id }}" method="POST" style="display: inline;">
+          <button type="submit">Remove</button>
+        </form>
+      </li>
+    {{/each}}
+  </ul>
+  <p>Total Amount: ${{ totalAmount }}</p>
+  <form action="/checkout/paypal" method="POST">
+        <button type="submit">Pay with PayPal</button>
+      </form>
+
+{{else}}
+  <p>Your cart is empty.</p>
+{{/if}}
+
+  <a href="/">Back to Products</a>
+</section>
+
+ <script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID"></script>
+  <script>
+    paypal.Buttons({
+      createOrder: function(data, actions) {
+        // Set up the transaction
+        return actions.order.create({
+          purchase_units: [{
+            amount: {
+              currency_code: 'USD',
+              value: '{{ totalAmount }}'
+            }
+          }]
+        });
+      },
+      onApprove: function(data, actions) {
+        // Capture the funds from the transaction
+        return actions.order.capture().then(function(details) {
+          // Redirect to a success page or handle success as needed
+          window.location.href = '/success';
+        });
+      }
+    }).render('#paypal-form');
+  </script>

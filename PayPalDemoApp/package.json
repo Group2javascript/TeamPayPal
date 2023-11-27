@@ -1,0 +1,27 @@
+{
+  "name": "paypaldemoapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^16.3.1",
+    "express": "~4.16.1",
+    "hbs": "~4.0.4",
+    "http-errors": "~1.6.3",
+    "mongoose": "^8.0.1",
+    "morgan": "~1.9.1",
+    "node-fetch": "^3.3.2",
+    "paypal-rest-sdk": "^1.8.1"
+  },
+  "description": "This is a demo paypal application.",
+  "main": "app.js",
+  "keywords": [
+    "Paypal"
+  ],
+  "author": "Stanly,Sneha,Sayan,Rosemaria",
+  "license": "ISC"
+}

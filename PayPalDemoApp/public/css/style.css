@@ -1,0 +1,281 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+/************************************************************/
+/******************** Header *******************************/
+
+.header-set {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  max-width: 100px; 
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 15px;
+  font-size: 18px;
+}
+.nav-link:hover{
+  color:#801c0a;
+  font-size: 22px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+/************************************************************/
+/**************Index Page **********************************/
+
+.content{
+  height: 80vh;
+  background-image: url('/images/background.jpg');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content h1{
+  padding-top: 150px;
+  font-size: 30px;
+}
+.content p{
+  text-align: center;
+  padding-top: 50px;
+}
+.center-text{
+  text-align: center;
+}
+.center-text a{
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 20px;
+}
+.center-text a:hover{
+  text-decoration: none;
+  background-color: #801c0a;
+
+}
+
+/********************************************************/
+/***************Products Page **************************/
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  justify-content: space-around;
+}
+
+.product {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px; 
+}
+
+.product-details {
+  text-align: left;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+/********************************************************************************/
+/*********************************Cart Page *************************************/
+
+.cart-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #c82333;
+}
+
+p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.payment-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#paypal-button-container {
+  text-align: center;
+}
+
+
+
+
+
+
+
+/***********************************************************************************/
+/****************************** Footer ********************************************/
+
+.footer-container {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-container p {
+  margin: 0;
+}
+
+.social-icons p {
+  margin: 0;
+}
+
+.icon-link {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.icon-link i {
+  font-size: 24px;
+}
+
+
+.icon-link:hover {
+  opacity: 0.8;
+}
+

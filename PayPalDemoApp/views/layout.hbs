@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID"></script>
+    <script src="../public/js/checkout.js" defer></script>
+    <script src="../routes/server.js" defer></script>
+
+    </head>
+<body>
+<header class="header-set">
+  <div class="left-section">
+    <div class="logo-container">
+      <img src="/images/logo.jpeg" alt="Your Logo">
+    </div>
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li>
+          <a class="nav-link" href="/products">Products</a>
+        </li>
+        <li>
+          <a class="nav-link" href="/cart">Cart</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="right-section">
+    <ul class="nav-list">
+      <li>
+        <a class="nav-link" href="/login">Login</a>
+      </li>
+      <li>
+        <a class="nav-link" href="/signup">Signup</a>
+      </li>
+    </ul>
+  </div>
+</header>
+    {{{body}}}
+
+    <footer class="footer-container">
+      <div class="container">
+      <div>
+        <p>&copy; 2023 Team Paypal.&nbsp All rights reserved.</p>
+      </div>
+      <div class="social-icons">
+        <p>Follow me:</p>
+        <a href="https://github.com/Stanlybiju/COMP2068JSFrameworks" target="_blank" class="icon-link">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/stanlybiju/" target="_blank" class="icon-link">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </div>
+    </div>  
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="../public/js/cart.js"></script>
+<script src="../public/js/addTocart.js"></script>
+<script src="../public/js/products.js"></script>
+<script src="../public/js/cartPage.js"></script>
+</body>
+</html>

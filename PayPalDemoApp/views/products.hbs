@@ -1,0 +1,34 @@
+<h1>{{ title }}</h1>
+
+{{#each products}}
+  <div class="product">
+    <div>
+      <img src="{{ this.imageUrl }}" alt="{{ this.name }}" class="product-image">
+    </div>
+    <div>
+       <h3>{{ this.name }}</h3>
+    <p>Price: ${{ this.price }}</p>
+    <form action="/addToCart/{{ this.id }}" method="POST">
+    <input type="hidden" name="productId" value="{{ this.id }}">
+        <input type="hidden" name="productName" value="{{ this.name }}">
+        <input type="hidden" name="productPrice" value="{{ this.price }}">
+        <input type="hidden" name="productImage" value="{{ this.imageUrl }}">
+      <button type="submit" class="add-to-cart-btn" data-product-id="{{ this.id }}">Add to Cart</button>
+    </form>
+    </div>
+  </div>
+{{/each}}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
+
+    addToCartButtons.forEach(button => {
+      button.addEventListener('click', function () {
+        const productId = this.getAttribute('data-product-id');
+        // Log the product ID to the console for testing
+        console.log('Product added to cart:', productId);
+      });
+    });
+  });
+</script>
